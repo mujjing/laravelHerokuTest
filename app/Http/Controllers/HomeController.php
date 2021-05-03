@@ -20,11 +20,11 @@ class HomeController extends Controller
 
     public function mail()
     {
-        $details = [
-            'title' => '릴리즈 테스트',
-            'body' => '메일도 가는지 테스트 얄루'
-        ];
-        Mail::to('jhiosdevelop@gmail.com')->send(new TestMail($details));
-        return redirect()->route('home');
+        // $details = [
+        //     'title' => '릴리즈 테스트',
+        //     'body' => '메일도 가는지 테스트 얄루'
+        // ];
+        // Mail::to('jhiosdevelop@gmail.com')->send(new TestMail($details));
+        return view('emails.TestMail');
     }
 }
