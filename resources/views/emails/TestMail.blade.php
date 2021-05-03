@@ -20,6 +20,7 @@
                     .then(function() {
                         console.log('SUCCESS!');
                         alert('메일전송 성공');
+                        location.href="/second";
                     }, function(error) {
                         console.log('FAILED...', error);
                         alert('메일전송 실패');
