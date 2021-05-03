@@ -1,5 +1,4 @@
 <?php
-
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -11,5 +10,6 @@
 |
 */
 
-Route::get('/', 'HomeController@index');
+Route::get('/', 'HomeController@index')->name('home');
 Route::get('/second', 'HomeController@second');
+Route::get('/send-mail','HomeController@mail');
